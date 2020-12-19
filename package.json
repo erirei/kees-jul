@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "set PUBLIC_URL=https://erirei.github.io/tine-jul&&react-scripts build",
+    "build": "set PUBLIC_URL=https://erirei.github.io/kees-jul&&react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
