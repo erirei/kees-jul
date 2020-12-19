@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <div className="christmas"></div>
-      <h1>Kjære Tine!</h1>
+      <h1>Kjære Kees!</h1>
       <button
         onClick={() => {
           setGiftOpen(true);
@@ -31,7 +31,7 @@ function App() {
             transform: "rotate(10deg)",
             marginTop: "5rem",
           }}
-          src="./ossTre.jpg"
+          src="./majaKeesJorgen.jpg"
         />
         <img
           width={"300px"}
@@ -40,7 +40,7 @@ function App() {
             marginBottom: "2rem",
             marginLeft: "auto",
           }}
-          src="./fyrverkeri.jpg"
+          src="./erikTineTerje.jpg"
         />
         <p>
           I år får du av oss et gavekort på{" "}
@@ -51,7 +51,7 @@ function App() {
           Vi er kjempeglad i deg!
         </p>
         <p style={{ marginBottom: "3rem" }}>
-          Kjærlig hilsen Erik, Jørgen, Maja, Terje og Vincent
+          Kjærlig hilsen Erik, Jørgen, Maja, Terje og Vincent &#x1f43e;
         </p>
         <img
           width={"300px"}
