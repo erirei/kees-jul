@@ -5,10 +5,27 @@ import "./ChristmasTree.scss";
 
 function App() {
   const [giftOpen, setGiftOpen] = useState<boolean>(false);
+  const today = new Date(Date.now());
+  const christmas = new Date("2020-12-24");
+  const oneDay = 24 * 60 * 60 * 1000;
+  const diffDays = Math.round(
+    Math.abs((today.getTime() - christmas.getTime()) / oneDay)
+  );
+  if (diffDays > 0) {
+    return (
+      <div className="App">
+        <h1 style={{ marginTop: "5rem" }}>
+          {diffDays + 1} dager igjen til jul
+        </h1>
+      </div>
+    );
+  }
+
   return (
     <div className="App">
       <div className="christmas"></div>
       <h1>Kjære Kees!</h1>
+
       <button
         onClick={() => {
           setGiftOpen(true);
@@ -45,8 +62,9 @@ function App() {
         <p>
           I år får du av oss et gavekort på{" "}
           <span style={{ whiteSpace: "nowrap" }}>1 000,-</span> kroner til å
-          bruke på TV møbel, stuebord, vinkurs, spatur, eller en hvilken som
-          helst opplevelse <br />
+          bruke på TV møbel, stuebord, vinkurs, eller en hvilken som helst
+          opplevelse.
+          <br />
           <br />
           Vi er kjempeglad i deg!
         </p>
